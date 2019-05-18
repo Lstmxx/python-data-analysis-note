@@ -48,3 +48,6 @@ print(ronhe)
 ronhe = pd.concat([df_2,df_3],axis=0,join='inner')#m默认是outer，outer的话会全部合并并且把没有的部分用nan来替代，inner的话就只保留相同的来合并
 
 print(ronhe)
+
+res = pd.merge(df_2,df_3,on=['B','C','D'])
+print(res)
